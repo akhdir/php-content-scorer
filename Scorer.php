@@ -1,6 +1,6 @@
 <?php 
 
-class Score {
+class Scorer {
 
 	private $high_risk_phrases = Array();
 
@@ -28,7 +28,7 @@ class Score {
 	}
 
 
-	function calculate($comment) {
+	function score($comment) {
 
 		$comment =  $this->_cleanUp($comment);
 
@@ -51,7 +51,7 @@ class Score {
 	}
 
 
-	function calculateFast($comment) {
+	function scoreFast($comment) {
 
 		$comment =  $this->_cleanUp($comment);
 
